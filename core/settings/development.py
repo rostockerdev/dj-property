@@ -1,4 +1,4 @@
-from settings.base import *
+from .base import *
 from decouple import config
 
 ###########################################

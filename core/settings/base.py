@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Local App
     'pages.apps.PagesConfig',
+    'realtors.apps.RealtorsConfig',
     # Third Party App
     'django.contrib.humanize',
 ]

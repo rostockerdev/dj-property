@@ -8,7 +8,8 @@ from django.conf.urls import handler400, handler403, handler404, handler500
 
 urlpatterns = [
     path("dev/", admin.site.urls),
-    path('', include('pages.urls', namespace='pages'))
+    path('', include('pages.urls', namespace='pages')),
+    path('realtors/', include('realtors.urls', namespace='realtors')),
 ]
 
 handler400 = "core.views.bad_request"

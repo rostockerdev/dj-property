@@ -178,7 +178,7 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                {% comment %} <form action="{% url 'contacts:contact' %}" method="POST">
+                <form action="{% url 'contacts:contact' %}" method="POST">
                     {% csrf_token %}
                     {% if user.is_authenticated %}
                         <input type="hidden" name="user_id" value="{{ user.id }}">
@@ -209,7 +209,7 @@
                     </div>
                     <hr>
                     <input type="submit" value="Send" class="btn btn-block btn-secondary">
-                </form> {% endcomment %}
+                </form>
                 </div>
             </div>
         </div>

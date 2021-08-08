@@ -3,6 +3,8 @@ from django.urls import path
 from listings.views.listing_list import listing_list_view
 from listings.views.listing_detail import listing_detail_view
 from listings.views.listing_search import listing_search_view
+
+
 app_name = 'listings'
 
 urlpatterns = [

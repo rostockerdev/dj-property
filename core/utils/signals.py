@@ -3,6 +3,7 @@ from django.db import models
 from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from realtors.models import Realtor
+from listings.models import Listing
 
 
 def remove_file_and_cleanup(filepath):
@@ -33,6 +34,7 @@ def auto_delete_file_on_delete(sender, instance, **kwargs):
             remove_file_and_cleanup(field.path)
 
 post_delete.connect(auto_delete_file_on_delete, sender=Realtor)
+post_delete.connect(auto_delete_file_on_delete, sender=Listing)
 
 def auto_delete_file_on_change(sender, instance, **kwargs):
     """ Deletes file from filesystem when corresponding object is changed or removed.\
@@ -58,3 +60,4 @@ def auto_delete_file_on_change(sender, instance, **kwargs):
             pass
 
 pre_save.connect(auto_delete_file_on_change, sender=Realtor)
+pre_save.connect(auto_delete_file_on_change, sender=Listing)

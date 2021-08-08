@@ -8,7 +8,7 @@ from core.utils.util import unique_slug_generator
 class Realtor(models.Model):
     slug             = models.SlugField('Slug', max_length=64, blank=True, unique=True)
     name             = models.CharField(max_length=128)
-    photo            = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo            = models.ImageField(upload_to='photos/realtors/%Y/%m/%d/')
     description      = models.TextField(blank=True)
     phone            = models.CharField(max_length=16)
     email            = models.CharField(max_length=24)

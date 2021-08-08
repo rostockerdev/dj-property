@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     # Local App
     'pages.apps.PagesConfig',
     'realtors.apps.RealtorsConfig',
+    'listings.apps.ListingsConfig',
     # Third Party App
     'django.contrib.humanize',
 ]

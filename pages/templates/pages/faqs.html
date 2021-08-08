@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% load humanize %}
+
+{% block title %}
+    {% if title %}
+        | {{ title }}
+    {% else %}
+        | Faqs
+    {% endif %}
+{% endblock title %}
+
+{% block content %}
+    <section id="showcase-inner">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="display-4">
+                        FAQS
+                    </h1>
+                    <p class="lead">Get Answers To Your Real Estate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

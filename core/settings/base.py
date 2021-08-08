@@ -18,6 +18,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Local App
+    'pages.apps.PagesConfig',
+    # Third Party App
+    'django.contrib.humanize',
 ]
 
 ###########################################

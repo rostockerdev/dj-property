@@ -5,7 +5,8 @@ from decouple import config
 #        SECRET CONFIGURATION             #
 ###########################################
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=True, cast=bool)
+# DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 ###########################################

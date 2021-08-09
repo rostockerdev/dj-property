@@ -1,26 +1,59 @@
 {% load static %}
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-rlre sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-rlre sticky-top">
     <div class="container">
-        <a href="{% url 'pages:index' %}" class="navbar-brand">
-            <img src="{% static 'img/logo.png' %}" alt="DJProperty" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"cid="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-                <li {% if '/' == request.path %} class="nav-item active mr-3" {% else %} class="nav-item  mr-3" {% endif %}>
-                    <a href="{% url 'pages:index' %}" class="nav-link">Home</a>
-                </li>
-                <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item  mr-3" {% endif %}>
-                    <a href="{% url 'pages:about' %}" class="nav-link">About</a>
-                </li>
-                <li {% if 'faqs' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item  mr-3" {% endif %}>
-                    <a href="{% url 'pages:faqs' %}" class="nav-link">Faqs</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="{% url 'pages:index' %}">
+        <img src="{% static 'img/logo.png'%}" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li {% if '/' == request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}> 
+            <a class="nav-link" href="{% url 'pages:index' %}">Home</a>
+          </li>
+          <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+            <a class="nav-link" href="{% url 'pages:about' %}">About</a>
+          </li>
+          <li {% if 'faqs' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+            <a class="nav-link" href="{% url 'pages:faqs' %}">Faqs</a>
+          </li>
+          <li {% if 'listings' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+            <a class="nav-link" href="{% url 'listings:listing-list' %}">Featured Listings</a>
+          </li>
+          <li {% if 'realtors' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+            <a class="nav-link" href="{% url 'realtors:realtor-list' %}">Realtors</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          {% if user.is_authenticated %}
+            <li {% if 'dashboard' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %} >
+              <a class="nav-link" href="{% url 'accounts:dashboard' %}">
+                <i class="fas fa-user-plus"></i> Dashboard</a>
+            </li>
+            <li class="nav-item mr-3" >
+              <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}">
+                <i class="fas fa-sign-in-alt"></i>
+                Logout</a>
+              <form action="{% url 'accounts:logout' %}" method="POST" id="logout">
+                {% csrf_token %}
+                <input type="hidden">
+              </form>
+            </li>
+          {% else %}
+            <li {% if 'register' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %} >
+              <a class="nav-link" href="{% url 'accounts:register' %}">
+                <i class="fas fa-user-plus"></i> Register</a>
+            </li>
+            <li {% if 'login' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %} >
+              <a class="nav-link" href="{% url 'accounts:login' %}">
+                <i class="fas fa-sign-in-alt"></i>
+                Login</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>

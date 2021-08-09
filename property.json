@@ -1,0 +1,123 @@
+propertys = {
+    "virginia": [
+        {
+            "title": "Detached Home in Arlington VA",
+            "address": "1018 19th St S Arlington VA 22202",
+            "city": "Arlington",
+            "state": "Virginia",
+            "zipcode": "22202",
+            "description": "LOCATION, LOCATION, LOCATION! This detached 4/5br, 3ba, 3 level home sits on 0.1280 acres lot in the Crystal City section of Arlington VA. It is WALKING DISTANCE TO METRO which makes it a RARE OPPORTUNITY. Its a 'standard rehab' with no major issues that we know of. Just a a great opportunity to make BIG MONEY updating the home. Renovated homes in the area are selling for $1,200,000+. But you can buy this home for only $859,900. That's a $340K+ 'spread' to work with!! Hurry, this home won't last!!",
+            "price": "859,900",
+            "bedrooms": "4",
+            "bathrooms": "2",
+            "garage": "1",
+            "sqft": "1677",
+            "lot_size": "0.125 acres"
+        },
+        {
+            "title": "Sterling VA for Only $424,900!",
+            "address": "161 Magnolia Rd Sterling VA 20164",
+            "city": "Sterling",
+            "state": "Virginia",
+            "zipcode": "20164",
+            "description": "GOOD LOCATION GOOD OPPORTUNITY! This detached 4br 3ba 2 level detached home has a 2 car garage and sits on a level .24 acre lot in Sterling VA. This home will qualify for conventional financing, so its an excellent opportunity for an owner occupant to pick up a property with HUGE SWEAT EQUITY! Rehab investors can redo the home for BIG MONEY as renovated homes in the area should sell for $575,000+. But you can buy this home for only $424,900! That's a $150K+ 'spread' to work with!! Hurry, this deal will be gone before you know it!!",
+            "price": "299,900",
+            "bedrooms": "3",
+            "bathrooms": "2",
+            "garage": "2",
+            "sqft": "2000",
+            "lot_size": "24 acre"
+        },
+        {
+            "title": "Reston Single Family Home Under $300K!!",
+            "address": "2215 Sanibel Drive Reston VA 20191",
+            "city": "Sanibel",
+            "state": "Virginia",
+            "zipcode": "20191",
+            "description": "Unbelievable price in HOT Reston area! Cute single family home priced like a townhouse. Hardwoods throughout. Fireplace in family room. Carport can easily be converted to a garage. Home is in good, but outdated condition... but with a $95K "spread" you have a lot of equity to work with! Great for buy/hold or renovate/resell or first time home buyer looking willing to do some work! HURRY! This one will not last long!",
+            "price": "249,900",
+            "bedrooms": "3",
+            "bathrooms": "2",
+            "garage": "1",
+            "sqft": "1168",
+            "lot_size": "0.25"
+        }
+    ],
+    "north-carolina": [
+        {
+            "title": "NOT in MLS: 3br Single Family in Asheville, NC",
+            "address": "312 Heather Ct. Asheville NC 28804",
+            "city": "Asheville",
+            "state": "Northcarolina",
+            "zipcode": "28804",
+            "description": "Great home just near growing Weaverville! Everything you'd want in a house: 3br, 2ba, 1 car garage w/ enough space for the kids to run! Outdated. Needs some TLC. But what do you expect for only $58.27/sqft! You can't find anything like it in the area. Hurry, it won't last!",
+            "price": "99,900",
+            "bedrooms": "3",
+            "bathrooms": "2",
+            "garage": "2",
+            "sqft": "1716",
+            "lot_size": "0.25"
+        }
+       
+    ],
+    "maryland": [
+        {
+            "title": "Silver Spring MD for Only $399,900! ",
+            "address": "13621 Middlevale Rd Silver Spring MD 20906",
+            "city": "Maryland",
+            "state": "Maryland",
+            "zipcode": "20906",
+            "description": "FANTASTIC OPPORTUNITY! This HUGE 4br, 2.5ba, 3lvl, 2 car garage home sits on a .433 acre lot in the Layhill View subdivision of Silver Spring, MD. It has a newer roof, newer HVAC, great hardwoods under carpet, and great curb appeal, making this an ideal rehab for the investor looking to make BIG MONEY. Homes are selling in the same neighborhood for $580k+, but you can buy this one for only $399,900. That's a $180K+ spread!! Plus, this home is a HUGE OPPORTUNITY for the 'owner occupant' buyer looking for BIG SWEAT EQUITY b/c the home is in good enough condition to qualify for conventional financing!! Hurry, this one will not last long!",
+            "price": "399,900",
+            "bedrooms": "4",
+            "bathrooms": "2",
+            "garage": "1",
+            "sqft": "2080",
+            "lot_size": "0.25"
+        },
+        {
+            "title": "Family Home in Temple Hills",
+            "address": "6206 Joyce Dr Temple Hills MD 20748",
+            "city": "maryland",
+            "state": "Maryland",
+            "zipcode": "20748",
+            "description": "OPPORTUNITY ALERT! This 3 bed, 2.5 bath, 4 level all brick split level home is conveniently located in convenient Temple Hills, MD. Great bones on this home as it is all brick, has a newer roof, and newer windows, making this an EASY REHAB! Finish the basement, update the kitchen and bathroom and you'll have a finished product that will bring you BIG MONEY!! Renovated homes in the same neighborhood for $350k+, but you can purchase this one for only $199,900. That's a $125K+ spread!! Hurry, you KNOW this one won't make it through the weekend!! NOTE: This home is currently occupied, but will be vacant by closing. Please respect the occupant's privacy and email us about arranging a time to see the home. Do NOT knock on the door to see the home or the occupants will take your name and you will be permanently removed from our email list.",
+            "price": "199,900",
+            "bedrooms": "3",
+            "bathrooms": "2",
+            "garage": "1",
+            "sqft": "2138",
+            "lot_size": "0.25"
+        }
+    ],
+    "florida": [
+        {
+            "title": "Home w Garage in Seminole FL",
+            "address": "11647 Park Blvd Seminole FL 33619",
+            "city": "florida",
+            "state": "florida",
+            "zipcode": "33619",
+            "description": "Investor Alert!! This 1032sf, 2br, 1ba, block home in Seminole FL has a 1 car garage, new roof, and an updated bathroom. Renovated homes in the area are selling for $225k+, but you can buy this home for only $159,900. That's a $65k+ spread to work with! Or you can clean it up and rent it out for HUGE CASH FLOW as homes in the area are renting for $1400+/month. Plus, this home is a HUGE OPPORTUNITY for the 'owner occupant' buyer looking for BIG SWEAT EQUITY because the home is in good enough condition to qualify for conventional financing!! Don't miss out! This one won't last long! NOTE: This home is currently occupied, but will be vacant by closing. Please respect the occupant's privacy and email us about arranging a time to see the home. Do NOT knock on the door to see the home or the occupants will take your name and you will be permanently removed from our email list.",
+            "price": "159,900",
+            "bedrooms": "2",
+            "bathrooms": "1",
+            "garage": "1",
+            "sqft": "1032",
+            "lot_size": ".15"
+        },
+        {
+            "title": "Block home in Seminole",
+            "address": "92nd Terrace Seminole FL 33777",
+            "city": "florida",
+            "state": "florida",
+            "zipcode": "33777",
+            "description": "LIKE SUMMER... THIS DEAL IS HOT, HOT, HOT!! This block 3br, 1ba, 840sqft home in Seminole is primed for BIG PROFIT, whether you are a rehabber, buy/hold investor, or owner occupant looking for a steal of a deal! Renovated homes in the area are selling for $170,000+. But you can buy this home for only $99,900. That's a $70K+ 'spread' to work with!! Or you can clean it up and rent it out for HUGE CASH FLOW as homes in the area are renting for $1,200/month! Plus, this home is a HUGE OPPORTUNITY for the 'owner occupant' buyer looking for BIG SWEAT EQUITY b/c the home is in good enough condition to qualify for conventional financing!! Hurry, like summer, this deal will be gone before you know it!! NOTE: This home is currently occupied, but will be vacant by closing. Please respect the occupant's privacy and email us about arranging a time to see the home. Do NOT knock on the door to see the home or the occupants will take your name and you will be permanently removed from our email list.",
+            "price": "99,900",
+            "bedrooms": "3",
+            "bathrooms": "1",
+            "garage": "1",
+            "sqft": "840",
+            "lot_size": ".25"
+        }
+    ]
+}

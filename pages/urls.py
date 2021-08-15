@@ -7,7 +7,7 @@ from pages.views.faqs import faqs_view
 app_name = "pages"
 
 urlpatterns = [
-    path('', home_view, name='index'),
-    path('about', about_view, name='about'),
-    path('faqs', faqs_view, name='faqs')
+    path("", home_view, name="index"),
+    path("about", about_view, name="about"),
+    path("faqs", faqs_view, name="faqs"),
 ]

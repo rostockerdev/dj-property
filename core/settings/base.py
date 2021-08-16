@@ -12,6 +12,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ###########################################
 #     APPLICATION CONFIGURATION           #
 ###########################################
+LOCAL_APPS = [
+    'pages.apps.PagesConfig',
+    'realtors.apps.RealtorsConfig',
+    'listings.apps.ListingsConfig',
+    'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
+]
+
+THIRDPARTY_APPS = [
+    'django.contrib.humanize',
+    'debug_toolbar',
+]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -21,13 +34,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Local App
-    'pages.apps.PagesConfig',
-    'realtors.apps.RealtorsConfig',
-    'listings.apps.ListingsConfig',
-    'accounts.apps.AccountsConfig',
-    'contacts.apps.ContactsConfig',
+    *LOCAL_APPS,
     # Third Party App
-    'django.contrib.humanize',
+    *THIRDPARTY_APPS
 ]
 
 ###########################################
@@ -42,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'

@@ -30,7 +30,7 @@ def listing_search_view(request):
         price = request.GET["price"]
         if price:
             qs = Listing.objects.filter(price__lte=price)
-
+            
     context = {
         "bedroom_choices": bedroom_choices,
         "price_choices": price_choices,

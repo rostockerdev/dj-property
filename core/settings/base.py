@@ -22,7 +22,7 @@ LOCAL_APPS = [
 
 THIRDPARTY_APPS = [
     'django.contrib.humanize',
-    'debug_toolbar',
+    'django.contrib.sitemaps',
 ]
 
 

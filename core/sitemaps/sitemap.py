@@ -8,7 +8,7 @@ from realtors.models import Realtor
 
 class StaticViewSitemap(sitemaps.Sitemap):
     priority = 0.5
-    changefreq = 'daily'
+    changfreq = 'daily'
 
     def items(self):
         return ['pages:about']
@@ -19,7 +19,7 @@ class StaticViewSitemap(sitemaps.Sitemap):
 
 class ListingSitemap(sitemaps.Sitemap):
 
-    changefreq = 'daily'
+    changfreq = 'daily'
     priority = 0.9
 
     def items(self):
@@ -31,7 +31,7 @@ class ListingSitemap(sitemaps.Sitemap):
 
 class RealtorSitemap(sitemaps.Sitemap):
 
-    changefreq = 'daily'
+    changfreq = 'daily'
     priority = 0.9
 
     def items(self):

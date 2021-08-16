@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.core.mail import send_mail
 from django.contrib import messages
 from datetime import datetime
@@ -41,7 +41,7 @@ def contact(request):
         # Email Send
         m_subject = "Property Listing Inquiry"
         m_body = f"There has been an inquiry for {listing}. Sign into the admin panel for more info"
-        f_mail = "raselrostock@gmail.com"
+        f_mail = "rostockerdev@gmail.com"
         t_mail = [realtor_email, "raselrostock@protonmail.com"]
         send_mail(m_subject, m_body, f_mail, t_mail, fail_silently=False)
         messages.success(

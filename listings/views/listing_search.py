@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
-from listings.choices import state_choices, price_choices, bedroom_choices
+from listings.choices import bedroom_choices, price_choices, state_choices
 from listings.models import Listing
 
 
@@ -30,7 +30,7 @@ def listing_search_view(request):
         price = request.GET["price"]
         if price:
             qs = Listing.objects.filter(price__lte=price)
-            
+
     context = {
         "bedroom_choices": bedroom_choices,
         "price_choices": price_choices,

@@ -1,7 +1,8 @@
 from datetime import date
-from django.urls import reverse
+
 from django.db import models
 from django.db.models.signals import pre_save
+from django.urls import reverse
 
 from core.utils.util import unique_slug_generator
 

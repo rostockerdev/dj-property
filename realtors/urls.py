@@ -1,4 +1,5 @@
 from django.urls import path
+
 from realtors.views import realtor_detail, realtor_list
 
 app_name = "realtors"

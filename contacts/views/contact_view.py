@@ -1,8 +1,11 @@
+import logging
+from datetime import datetime
+
+from django.contrib import messages
+from django.core.mail import send_mail
 from django.http.response import BadHeaderError
 from django.shortcuts import redirect
-from django.core.mail import send_mail
-from django.contrib import messages
-from datetime import datetime
+
 from contacts.models import Contact
 
 
@@ -49,11 +52,13 @@ def contact(request):
                 send_mail(m_subject, m_body, f_mail, t_mail, fail_silently=False)
                 messages.success(
                     request,
-                    "Your request has been submitted, a realtor will get back to you soon."
+                    "Your request has been submitted, a realtor will get back to you soon.",
                 )
             except BadHeaderError:
                 messages.error(request, "Invalid header was set.")
+                logging.getLogger("error_logger").error(
+                    "Sorry, Was not possible to send the mail"
+                )
                 return redirect("/listings/" + listing_id)
-
 
         return redirect("/listings/" + listing_id)

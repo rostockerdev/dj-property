@@ -1,3 +1,4 @@
+from django.http.response import BadHeaderError
 from django.shortcuts import redirect
 from django.core.mail import send_mail
 from django.contrib import messages
@@ -43,9 +44,16 @@ def contact(request):
         m_body = f"There has been an inquiry for {listing}. Sign into the admin panel for more info"
         f_mail = "rostockerdev@gmail.com"
         t_mail = [realtor_email, "raselrostock@protonmail.com"]
-        send_mail(m_subject, m_body, f_mail, t_mail, fail_silently=False)
-        messages.success(
-            request,
-            "Your request has been submitted, a realtor will get back to you soon.",
-        )
+        if m_subject and m_body and f_mail:
+            try:
+                send_mail(m_subject, m_body, f_mail, t_mail, fail_silently=False)
+                messages.success(
+                    request,
+                    "Your request has been submitted, a realtor will get back to you soon."
+                )
+            except BadHeaderError:
+                messages.error(request, "Invalid header was set.")
+                return redirect("/listings/" + listing_id)
+
+
         return redirect("/listings/" + listing_id)

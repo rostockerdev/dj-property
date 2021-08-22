@@ -1,6 +1,12 @@
 {% extends "base/base.html" %}
 {% load static %}
-{% block title %} | About us {% endblock %}
+{% block title %} 
+  {% if title %}
+    | {{ title }}
+  {% else %}
+    | About us
+  {% endif %}  
+{% endblock %}
 {% block content %}
     <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
